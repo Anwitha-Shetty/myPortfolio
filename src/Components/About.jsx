@@ -24,19 +24,22 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+  "I'm an MCA student at REVA University with a passion for MERN Stack development. I enjoy solving complex problems and creating scalable solutions.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+"Backend Development",
+  "SQL",
+  "Python",
+  "Java",
+  "C/C++",
+  "HTML & CSS",
+  "JavaScript",
+  "Problem Solving",
+  "AI/ML for Geospatial Data Analysis",
 ];
 
 /**
@@ -45,8 +48,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
-
+  "I am passionate about backend development and building scalable solutions. My expertise lies in solving complex problems using technologies like MERN Stack, Python, and AI/ML for geospatial data analysis. I constantly strive to learn and innovate, ensuring that the solutions I create are efficient and effective.";
 const About = () => {
   return (
     <section className="padding" id="about">
@@ -79,6 +81,18 @@ const About = () => {
         <hr />
         <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
       </div>
+      <style>
+        {`
+          @media (max-width: 768px) {
+            ul {
+              columns: 1 !important;
+            }
+            div {
+              width: 90% !important;
+            }
+          }
+        `}
+      </style>
     </section>
   );
 };
